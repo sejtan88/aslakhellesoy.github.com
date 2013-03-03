@@ -9,7 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -33,15 +33,41 @@
 
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
-  
-    <h2>A blogging framework for hackers.</h2>
-  
-</hgroup>
+<body class="no-sidebar">
+  <header role="banner" class="frontpage">
+    <div class="halo">
+      <div class="grid">
+        <div class="row">
+          <div class="span2">
+            <img src="/images/logos/cucumber-48x48.png">
+          </div>
+          <div class="span6">
+          </div>
+        </div>
+      </div>
 
-</header>
+      <div class="grid">
+        <div class="row">
+          <div class="span5">
+            <h2>Executable Specifications in plain text</h2>
+            <p>
+              Cucumber is a bla bla bla
+            </p>
+          </div>
+
+          <div class="span3">
+<figure class='code'><figcaption><span>hello.feature</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='gherkin'><span class='line'><span class="k">Feature:</span><span class="nf"> Hello</span>
+</span><span class='line'><span class="nf">  </span><span class="k">Scenario:</span><span class="nf"> Invite a friend</span>
+</span><span class='line'><span class="k">    Given </span><span class="nf">I have no friends</span>
+</span></code></pre></td></tr></table></div></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
@@ -55,39 +81,28 @@
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
 </ul>
 
 </nav>
   <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
-
+    <div class="grid">
+      <div class="row">
+        <div class="span4">
+  Now we&#8217;re talking
+        </div>
+        <div class="span4">
+<figure class='code'><figcaption><span>hello.feature</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='gherkin'><span class='line'><span class="k">Feature:</span><span class="nf"> Hello</span>
+</span><span class='line'><span class="nf">  </span><span class="k">Scenario:</span><span class="nf"> Invite a friend</span>
+</span><span class='line'><span class="k">    Given </span><span class="nf">I have no friends</span>
+</span></code></pre></td></tr></table></div></figure>
+        </div>
+      </div>
     </div>
   </div>
   <footer role="contentinfo"><p>
