@@ -1,8 +1,59 @@
 ---
-layout: page
-title: "index"
-date: 2013-03-01 22:07
-comments: true
-sharing: true
-footer: true
 ---
+
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body class="no-sidebar">
+  <header role="banner" class="frontpage">
+    <div class="halo">
+      <div class="grid">
+        <div class="row">
+          <div class="span2">
+            <img src="/images/logos/cucumber-48x48.png">
+          </div>
+          <div class="span6">
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="row">
+          <div class="span5">
+            <h2>Executable Specifications in plain text</h2>
+            <p>
+              Cucumber is a bla bla bla
+            </p>
+          </div>
+
+          <div class="span3">
+``` gherkin hello.feature
+Feature: Hello
+  Scenario: Invite a friend
+    Given I have no friends
+```
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav role="navigation">{% include navigation.html %}</nav>
+  <div id="main">
+    <div class="grid">
+      <div class="row">
+        <div class="span4">
+  Now we're talking
+        </div>
+        <div class="span4">
+``` gherkin hello.feature
+Feature: Hello
+  Scenario: Invite a friend
+    Given I have no friends
+```
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer role="contentinfo">{% include footer.html %}</footer>
+  {% include after_footer.html %}
+</body>
+</html>
